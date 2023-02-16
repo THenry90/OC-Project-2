@@ -1,0 +1,8 @@
+/* npm run sass-compile in the terminal to run sass code */
+.exampleclass {
+  height: 400px;
+  width: 500px;
+  background-color: lightblue;
+}
+
+/*# sourceMappingURL=main.css.map */
