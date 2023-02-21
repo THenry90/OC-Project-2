@@ -1,9 +1,299 @@
 /* npm run sass-compile in the terminal to run sass code */
 
+$color-primary: #9356DC; 
+$color-secondary: #FF79DA; 
+$color-tertiary: #99E2D0;
+$color-footer: rgb(46 46 46);
+$color-background1: white;
+$color-background2: black;
+$color-background3: rgb(231 231 231);
+$color-background4: rgb(245 245 245);
+$color-outline1: #0002;
+$color-outline2: red;
+$color-outline3: blue;
+$color-outline4:green;
+$color-outline5:purple;
+
+$base__font-size:15 !default;
+$base__line:20;
 
 
-.exampleclass {
-    height:400px;
-    width:500px;
-    background-color:lightblue;
+@mixin border-style-1{
+    border:solid 2px red
 }
+/*---------------------------------------------*/
+*{
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+outline:2px solid #0002; 
+}
+
+body{
+    width:100%;
+}
+.container{
+    border:2px black solid;
+    width:100%;
+    height:500px;
+}
+
+header {
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    height:fit-content;
+    box-sizing: border-box;
+        .logo-container{
+            background-color: $color-background1;
+            display:flex;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
+        }    
+}
+
+.logo {
+    width:190px;
+    margin:20px auto 10px auto;
+}
+.search {
+    height:fit-content;
+    background-color: $color-background3;
+    width:100%;
+    height:50px;
+    position: relative;
+    bottom:3px;
+    border-bottom:2px solid white;
+}
+
+.search-text{
+    margin:0;
+}
+
+h1 {
+    display:flex;
+    font-size:24px;
+    margin: 0px auto 0px auto;
+    width:fit-content;
+
+}
+
+h2 {
+    border:red 2px solid;
+    text-align:center;
+    width:fit-content;
+    margin:auto;
+}
+
+
+
+.restaurant-section {
+    background-color: $color-background4;
+    height:500px;
+}
+
+.card {
+    width:300px;
+    height:250px;
+    box-sizing:border-box;
+    .card__link{
+        display:block;
+        width:100%;
+        border:solid blue 2px;
+    }
+        .card__image {}
+        .card__details {}
+        .card__text-container{}
+
+}
+
+
+
+.card__image {
+    width:100%
+}
+
+.card__details{
+    background-color: red;
+    width:100%;
+    height:50px;
+    padding:0px;
+    margin:0px;
+    display:flex;
+}
+
+.card__text-container {
+    width:100%;
+    height:fit-content;
+    background-color:yellow;
+    padding:0px;
+    margin:0px;
+    width:fit-content;
+}
+
+.card__restaurant-title {
+    padding:0px;
+    margin:0px;
+}
+
+.card__restaurant-city {
+    padding:0px;
+    margin:0px;
+}
+
+/*
+.restaurant__container {
+    width:90%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-evenly;
+    height:400px;
+    margin: 0 auto;
+    background-color:yellow;
+
+}
+
+.restaurant-card-link {
+    height:300px;
+}
+
+.link {
+    text-decoration: none;
+    color:black;
+}
+
+.restaurant__card {
+    height:fit-content;
+}
+
+.restaurant__image{
+    width:300px;
+    height:150px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;  
+}
+
+.text-and-heart-container{
+    display:flex;
+    height:80px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position:relative;
+    bottom:10px;
+    padding-bottom:10px;
+}
+
+.details{
+    display:flex;
+    flex-direction: column;
+    height:fit-content;
+    width:150px;
+    gap:10px;
+    margin:10px;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+
+
+h3 {
+    padding:0px;
+    margin:0px;
+}
+
+.restaurant__location{
+    padding:0px;
+    margin:0px;
+    font-weight: 300;
+}
+
+.heart {
+    width:24px;
+    height:24px;
+    margin-left: 80px;
+    align-self:center;
+    background-color: blue;
+}
+
+.heart:hover {
+background-color:pink;
+
+}
+*/
+
+footer {
+    background-color:$color-footer;
+    padding-top:0px;
+    padding-bottom:30px;
+    color:white;
+       .footer-logo {
+       font-family: 'Shrikhand', cursive;
+       } 
+}
+
+.footer-logo {
+
+    padding-left:30px;
+    padding-top:30px;
+    font-size:24px;
+}
+
+ul {
+    list-style-type: none;
+        li{
+        margin:10px;
+
+        }
+}
+
+.footer-link{
+    color:white;
+}
+
+.food-icon:before { 
+    content: '\1F374'; margin-left: -20px; margin-right: 10px; 
+} 
+
+
+.handshake-icon:before { 
+    content: '\1F91D'; margin-left: -20px; margin-right: 10px; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sass {
+    background-color:$color-primary;
+}
+
+.block {
+    background-color: $color-background1;        
+    }
+            
+
+
+
+.animation {
+    background-color: $color-secondary;
+
+}
+
+
+
+
+
