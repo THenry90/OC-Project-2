@@ -1,11 +1,55 @@
 @use'../utils/variables' as vars;
 @use'../utils/mixins' as mx;
 
-.btn{
-    padding:20px;
+.btn-explore{
+    padding:20px 30px 20px 30px;
     border-radius: 35px;
     border:0px;
     color:white;
     @include mx.color-gradient1;
     font-size:20px;
+    display:flex;
+    margin:auto;
+}
+
+.filter__number {
+    background-color: vars.$color-primary;
+    color:white;
+    width:30px;
+    height:30px;
+    border-radius: 50px;
+    text-align:center;
+    padding-top:5px;
+    position:relative;
+    right:15px;
+}
+
+
+.explanation{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.filter-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.filter{
+   
+    display:flex;
+    align-items: center;
+    width:400px;
+    margin:auto;
+    gap:20px;
+    border-radius:25px;
+    height:80px;
+    background-color: rgb(245 245 245);
+    box-shadow: 0 0 20px 1px rgb(205, 205, 205);
+
+}
+
+.filter-icon {
+    padding:0 10px;
 }

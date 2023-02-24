@@ -2,17 +2,29 @@
 
 footer {
     background-color:vars.$color-footer;
+    width:120%;
+    position:relative;
+    left: -30px;
+    bottom:-90px;
     padding-top:0px;
     padding-bottom:30px;
     color:white;
+    font-size:20px;
        .footer-logo {
        font-family: 'Shrikhand', cursive;
        } 
 }
 
+footer > div {
+    position:relative;
+
+}
+
+
+
 .footer-logo {
 
-    padding-left:30px;
+    padding-left:50px;
     padding-top:30px;
     font-size:24px;
 }
@@ -21,10 +33,33 @@ ul {
     list-style-type: none;
         li{
         margin:10px;
-
         }
 }
 
 .footer-link{
     color:white;
 }
+
+.food-icon:before { 
+    content: '\1F374'; margin-left: -20px; margin-right: 10px; 
+} 
+
+
+.handshake-icon:before { 
+    content: '\1F91D'; margin-left: -20px; margin-right: 10px; 
+} 
+
+
+.fa-utensils{
+    padding-right:15px;
+}
+
+.fa-handshake-angle{
+    padding-right:10px;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+
