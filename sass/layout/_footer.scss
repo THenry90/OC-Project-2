@@ -1,0 +1,30 @@
+@use'../utils/variables' as vars;
+
+footer {
+    background-color:vars.$color-footer;
+    padding-top:0px;
+    padding-bottom:30px;
+    color:white;
+       .footer-logo {
+       font-family: 'Shrikhand', cursive;
+       } 
+}
+
+.footer-logo {
+
+    padding-left:30px;
+    padding-top:30px;
+    font-size:24px;
+}
+
+ul {
+    list-style-type: none;
+        li{
+        margin:10px;
+
+        }
+}
+
+.footer-link{
+    color:white;
+}

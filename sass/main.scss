@@ -11,7 +11,7 @@
 @use'./pages/index';
 @use'./pages/menu';
 @use'./utils/mixins';
-@use'./utils/variables';
+@use'./utils/variables' as vars;
 
 
 
@@ -20,19 +20,6 @@
 
 /* npm run sass-compile in the terminal to run sass code */
 
-$color-primary: #9356DC; 
-$color-secondary: #FF79DA; 
-$color-tertiary: #99E2D0;
-$color-footer: rgb(46 46 46);
-$color-background1: white;
-$color-background2: black;
-$color-background3: rgb(231 231 231);
-$color-background4: rgb(245 245 245);
-$color-outline1: #0002;
-$color-outline2: red;
-$color-outline3: blue;
-$color-outline4:green;
-$color-outline5:purple;
 
 $base__font-size:15 !default;
 $base__line:20;
@@ -57,56 +44,16 @@ body{
     height:500px;
 }
 
-header {
-    display:flex;
-    flex-direction:column;
-    gap:5px;
-    height:fit-content;
-    box-sizing: border-box;
-        .logo-container{
-            background-color: $color-background1;
-            display:flex;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
-        }    
-}
 
-.logo {
-    width:190px;
-    margin:20px auto 10px auto;
-}
-.search {
-    height:fit-content;
-    background-color: $color-background3;
-    width:100%;
-    height:50px;
-    position: relative;
-    bottom:3px;
-    border-bottom:2px solid white;
-}
 
-.search-text{
-    margin:0;
-}
 
-h1 {
-    display:flex;
-    font-size:24px;
-    margin: 0px auto 0px auto;
-    width:fit-content;
 
-}
 
-h2 {
-    border:red 2px solid;
-    text-align:center;
-    width:fit-content;
-    margin:auto;
-}
 
 
 
 .restaurant-section {
-    background-color: $color-background4;
+    background-color: vars.$color-background4;
     height:500px;
 }
 
@@ -237,7 +184,7 @@ h3 {
 background-color:pink;
 
 }
-*/
+
 
 footer {
     background-color:$color-footer;
@@ -268,6 +215,8 @@ ul {
     color:white;
 }
 
+*/
+
 .food-icon:before { 
     content: '\1F374'; margin-left: -20px; margin-right: 10px; 
 } 
@@ -287,7 +236,7 @@ ul {
 
 
 
-
+/*
 
 .sass {
     background-color:$color-primary;
@@ -305,7 +254,7 @@ ul {
 
 }
 
-
+*/
 
 
 
