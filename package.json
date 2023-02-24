@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-compile": "sass --watch sass:public/styles"
+    "sass-compile": "sass --watch sass:public/styles/main.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "feather-icons": "^4.29.0"
+  }
 }
