@@ -1,3 +1,23 @@
+@use'./base/reset';
+@use'./base/typography';
+
+@use'./components/buttons';
+@use'./components/heart';
+@use'./components/slider';
+
+@use'./layout/footer';
+@use'./layout/header';
+
+@use'./pages/index';
+@use'./pages/menu';
+@use'./utils/mixins';
+@use'./utils/variables';
+
+
+
+
+
+
 /* npm run sass-compile in the terminal to run sass code */
 
 $color-primary: #9356DC; 
@@ -256,14 +276,6 @@ ul {
 .handshake-icon:before { 
     content: '\1F91D'; margin-left: -20px; margin-right: 10px; 
 } 
-
-
-
-
-
-
-
-
 
 
 
