@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Font Awesome Icon Library -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    
+
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./public/styles/main.css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>OHMYFOOD index page</title>
 </head>
 <body>
@@ -53,13 +55,13 @@
 
 
     <a class="card" href="#">
-        <img class="card__image card__image--new" src="../OHMYFOOD/images/restaurants/FullPallette.jpg" alt="Full Pallette image">
+        <!--<img class="card__image card__image--new" src="../OHMYFOOD/images/restaurants/FullPallette.jpg" alt="Full Pallette image">-->
         <div class="card__details">
             <div class="card__text-container">
                 <h3 class="card__restaurant-title">The Enchanted Plate</h3>
                 <p class="card__restaurant-city">New York</p>
             </div>
-            <img class="card__icon" src="./images/icons/heart.svg" alt="heart icon" height:50></img>
+            <img class="heart__icon" src="./images/icons/heart.svg" alt="heart icon" height:50></img>
         </div>
     </a>
 
@@ -133,17 +135,21 @@
     </div>
 </section>
 
+
+
 <footer>
     <p class="footer-logo">ohmyfood</p>
+
+    
     <ul>
-        <li class="food-icon"><a class= "link footer-link" href="#">Suggest a restaurant</a></li>
+        <i class="fa-utensils fas footer__icon" aria-hidden="true"></i><a class= "link footer-link" href="#">Suggest a restaurant</a></li>
         <li class="handshake-icon"><a class= "link footer-link" href="#">Become a partner</a></li>
         <li><a class= "link footer-link" href="#">Legal</li></a>
         <li><a class= "link footer-link" href="#">Contact</li></a>
     </ul>
 </footer>
 
-
+<!--
     <div class="container sass">
         <h2 class="sass"> Sass Sandbox</h2>
         <div class="parent">
@@ -161,7 +167,7 @@
             <li class="list__item list__item--modifier">5</li>
         </ul>
 
-        <!--BLOCK__ELEMENT--modiifer -->
+        BLOCK__ELEMENT--modiifer 
 
         <div class="block">
             <div class="element"></div>
@@ -173,6 +179,8 @@
         <h2 class="animations"> Animation Sandbox</h2>
         
     </div>
+
+-->
     
     
 </body>
