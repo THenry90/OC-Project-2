@@ -1,0 +1,11 @@
+@use'../utils/variables' as vars;
+@use'../utils/mixins' as mx;
+
+.btn{
+    padding:20px;
+    border-radius: 35px;
+    border:0px;
+    color:white;
+    @include mx.color-gradient1;
+    font-size:20px;
+}
