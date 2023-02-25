@@ -2,14 +2,15 @@
 
 footer {
     background-color:vars.$color-footer;
-    width:120%;
+    width:100%;
     position:relative;
-    left: -30px;
-    bottom:-90px;
+    bottom:30px;
+    height:300px;
     padding-top:0px;
     padding-bottom:30px;
     color:white;
-    font-size:20px;
+    font-size:18px;
+    font-weight: 300;
        .footer-logo {
        font-family: 'Shrikhand', cursive;
        } 

@@ -4,14 +4,26 @@
 
 h1 {
     display:flex;
-    font-size:24px;
+    font-size:26px;
     margin: 0px auto 0px auto;
+    padding-bottom: 10px;
     width:fit-content;
+    font-weight: 500;
+}
+
+.discover-text{
+    font-size:18px;
+    padding:20px 50px 20px 50px;
+    font-weight: 300;
+    color: rgb(48 48 48)
 }
 
 h2 {
    
-    text-align:center;
+    justify-self: left;
+    margin-left: 20px;
     width:fit-content;
-    margin:auto;
+    font-weight: bold;
+
+
 }
