@@ -1,1 +1,37 @@
-.heart__icon{}
+@use'../utils/mixins' as mx;
+
+.heart__icon{
+    position:absolute;
+    padding-top:20px;
+    transition: opacity 0.5s ease-in-out; 
+
+   
+}
+
+.heart--color{
+    @include mx.icon-fill1;
+
+    opacity: 0;
+}
+.heart--bnw{
+ 
+    opacity: 1;
+}
+
+.icon-container{
+display:flex;
+
+height:100%;
+width:50px;
+
+
+}
+
+
+ .heart--color:hover{
+    opacity: 1;
+}
+
+.heart--bnw:hover {
+    opacity: 0;
+}

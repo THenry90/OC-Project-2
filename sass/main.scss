@@ -48,13 +48,26 @@ $base__line:20;
 .explanation{
     display:flex;
     flex-direction:column;
-    height:400px;
-    padding-bottom:100px;
+    height:auto;
+    padding-bottom:50px;
     }
 
 .filter-container{
     padding-top:10px;
+    display:flex;
+    flex-flow:wrap;
 }
+.filter{
+transform:scale(1);
+transition-property: transform;
+transition-duration:750ms;
+&:hover {
+    background-color:vars.$color-primary-hover;
+    transform:scale(1.11)
+}
+}
+
+
 
 .restaurant-section {
     background-color: vars.$color-background4;
@@ -63,6 +76,7 @@ $base__line:20;
     display:flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .rest-card-container{
@@ -70,15 +84,16 @@ $base__line:20;
     flex-flow:wrap;
     height:auto;
     gap:30px;
-    width:400px;
-    margin:auto;
-    padding-bottom:60px;
+    width:100%;
+    height:auto;
+    justify-content: center;
+    padding-bottom:200px;
     }
 .card {
-    
     width:400px;
     height:250px;
     box-sizing:border-box;
+    
   
     .card__link{
         display:block;
@@ -89,6 +104,14 @@ $base__line:20;
         .card__details {}
         .card__text-container{}
 
+}
+
+.card:active{
+    color:green;
+}
+
+.card:visited {
+    color:black;
 }
 
 .new-container{

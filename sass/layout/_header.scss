@@ -2,8 +2,6 @@
 
 header {
     height:130px;
-    background-color:lightblue;
-
 }
 
 .top-section {
@@ -18,7 +16,7 @@ header {
     display:flex;
     background-color: vars.$color-background1;
     display:flex;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);  
 
 
     margin-bottom:-6px;
@@ -26,6 +24,8 @@ header {
     overflow:visible;
 
     padding-bottom:10px;
+    position:relative;
+    top:-5px;
 
 
 
@@ -38,6 +38,7 @@ header {
     margin:10px auto 10px auto;
  
     justify-self: center;
+    
 }
 .search {
     display:flex;
