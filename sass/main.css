@@ -27,7 +27,6 @@ h1 {
   font-size: 18px;
   padding: 20px 50px 20px 50px;
   font-weight: 300;
-  color: rgb(48, 48, 48);
 }
 
 h2 {
@@ -36,6 +35,10 @@ h2 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
+}
+
+h3 {
+  width: auto;
 }
 
 .btn-explore {
@@ -88,6 +91,42 @@ i.filter-icon {
   color: rgb(110, 110, 110);
   position: relative;
   right: 10px;
+}
+
+.heart__icon {
+  position: absolute;
+  padding-top: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.heart--color {
+  color: rgb(198, 93, 230);
+  color: linear-gradient(45deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 67%);
+  opacity: 0;
+}
+
+.heart--bnw {
+  opacity: 1;
+}
+
+.icon-container {
+  display: flex;
+  height: 100%;
+  width: 50px;
+}
+
+.heart--color:hover {
+  opacity: 1;
+}
+
+.heart--bnw:hover {
+  opacity: 0;
+}
+
+.menu__title-heart {
+  position: relative;
+  right: 70px;
+  bottom: 30px;
 }
 
 footer {
@@ -294,6 +333,7 @@ header {
   justify-content: space-between;
   padding: 30px 20px 0 30px;
   width: 100%;
+  flex-direction: row;
 }
 
 .restaurant-name {
@@ -502,8 +542,10 @@ header {
 .card .card__link {
   display: block;
   width: 100%;
-  border: solid blue 2px;
+  border: solid black 2px;
+  color: black;
 }
+
 .card:active {
   color: green;
 }
