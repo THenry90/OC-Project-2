@@ -4,27 +4,20 @@
     position:absolute;
     padding-top:20px;
     transition: opacity 0.5s ease-in-out; 
-
-   
 }
 
 .heart--color{
     @include mx.icon-fill1;
-
     opacity: 0;
 }
 .heart--bnw{
- 
     opacity: 1;
 }
 
 .icon-container{
-display:flex;
-
-height:100%;
-width:50px;
-
-
+    display:flex;
+    height:100%;
+    width:50px;
 }
 
 
@@ -34,4 +27,12 @@ width:50px;
 
 .heart--bnw:hover {
     opacity: 0;
+}
+
+.menu__title-heart{
+  
+position:relative;
+    right:70px;
+    bottom:30px;
+
 }
