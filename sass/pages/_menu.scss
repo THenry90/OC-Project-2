@@ -124,8 +124,8 @@
     transition-property: transform;
     transition-duration:750ms;
     &:hover {
-        background-color:vars.$color-primary-hover;
-        transform:scale(1.11)
+        /*background-color:vars.$color-primary-hover;
+        transform:scale(1.11)*/
     }
 }
 
