@@ -18,6 +18,7 @@ h1 {
   font-size: 26px;
   margin: 0px auto 0px auto;
   padding-bottom: 10px;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: 500;
 }
@@ -31,6 +32,7 @@ h1 {
 h2 {
   justify-self: left;
   margin-left: 20px;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
 }
@@ -139,6 +141,7 @@ footer {
   font-size: 18px;
   font-weight: 300;
 }
+
 footer .footer-logo {
   font-family: "Shrikhand", cursive;
 }
@@ -169,6 +172,7 @@ footer .footer-logo {
 ul {
   list-style-type: none;
 }
+
 ul li {
   margin: 10px;
 }
@@ -258,6 +262,11 @@ header {
   margin: auto;
 }
 
+.location-form::-moz-placeholder {
+  color: rgb(58, 58, 58);
+  font-weight: 450;
+}
+
 .location-form::placeholder {
   color: rgb(58, 58, 58);
   font-weight: 450;
@@ -302,6 +311,7 @@ header {
   width: 100%;
   position: relative;
   top: -70px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -389,6 +399,7 @@ header {
   transition-property: transform;
   transition-duration: 750ms;
 }
+
 .menu-item:hover {
   background-color: rgba(167, 100, 250, 0.2588235294);
   transform: scale(1.11);
@@ -407,6 +418,7 @@ header {
   font-weight: 450;
   margin-bottom: -10px;
   margin-top: 15px;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   width: 350px;
 }
@@ -500,6 +512,7 @@ header {
   transition-property: transform;
   transition-duration: 750ms;
 }
+
 .filter:hover {
   background-color: rgba(167, 100, 250, 0.2588235294);
   transform: scale(1.11);
@@ -530,6 +543,7 @@ header {
   height: 250px;
   box-sizing: border-box;
 }
+
 .card .card__link {
   display: block;
   width: 100%;
@@ -571,7 +585,9 @@ header {
   justify-content: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -591,6 +607,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 300px;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 0px;
   margin: 0px;
@@ -619,6 +636,6 @@ header {
 .heart__icon {
   justify-items: flex-end;
   font-size: 24px;
-}
+} 
 
 /*# sourceMappingURL=main.css.map */

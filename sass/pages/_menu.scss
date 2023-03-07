@@ -123,13 +123,13 @@
     border-radius:20px;
     box-shadow: 0 0 10px 5px rgb(215, 214, 214);
     transform:scale(1);
-    transition-property: transform;
+    /*transition-property: transform;
     transition-duration:750ms;
-    &:hover {
+    &:hover {/*
         /*background-color:vars.$color-primary-hover;
         transform:scale(1.11)*/
     }
-}
+
 
 .menu-item:hover {
 
