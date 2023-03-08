@@ -7,8 +7,9 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius:20px;
     /*opacity: 100%;*/
-    opacity: 0%;
+    opacity: 1;
     position: relative;
+    left:80px;
 }
 
 .menu-item__icon{
@@ -18,5 +19,7 @@
     background-color:white;
     border-radius:25px;
     padding:4px;
-    margin-top:30px;  
+    margin-top:30px;
+    transform: rotate(360deg);
+    transition: transform 400ms ease-in-out;  
 }
