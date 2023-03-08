@@ -22,7 +22,35 @@ $base__line:20;
     border:solid 2px red
 }
 /*---------------------------------------------*/
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231 231 231);
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .loading-container.show {
+    opacity: 1;
+  }
 
+  .loading-container {
+    animation: loading-screen 2s ease-out forwards, loading-screen-hide 0.5s ease-in-out 1s forwards;
+  }
+  
+  @keyframes loading-screen-hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
 
 
 .section-1{
