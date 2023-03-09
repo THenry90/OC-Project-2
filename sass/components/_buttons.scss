@@ -20,10 +20,29 @@
     transition-duration:750ms;
     &:hover {
         background-color:vars.$color-primary-hover;
-        transform:scale(1.11);
+
         cursor:pointer;
 }
 }
+
+.btn-order{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
 .filter__number {
     background-color: vars.$color-primary;
