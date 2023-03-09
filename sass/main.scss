@@ -39,7 +39,7 @@ $base__line:20;
   }
 
   .loading-container {
-    animation: loading-screen 2s ease-out forwards, loading-screen-hide 0.5s ease-in-out 1s forwards;
+    animation: loading-screen 1s ease-out forwards, loading-screen-hide 0.5s ease-in-out 1.5s forwards;
   }
   
   @keyframes loading-screen-hide {
@@ -82,8 +82,8 @@ $base__line:20;
     top:50%;
     left:50%;
     display:flex;
-    transition: transform 1500ms ease-out;
-    transform: rotate(540deg);  
+    transition: transform 2000ms ease-out;
+    transform: rotate(720deg);  
     color: vars.$color-primary;
     
 }
@@ -150,6 +150,12 @@ transition-duration:750ms;
     width:400px;
     height:250px;
     box-sizing:border-box;
+    transition-property: transform;
+    transition-duration:750ms;
+    &:hover{
+        transition: transform 500ms ease-in-out;
+        transform:scale(1.05)
+    }
     
   
     .card__link{
@@ -158,6 +164,7 @@ transition-duration:750ms;
         border:solid black 2px;
         color:black;
     }
+
 
 
 }
