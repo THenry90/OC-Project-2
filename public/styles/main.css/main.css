@@ -59,10 +59,27 @@ h3 {
 }
 .btn:hover {
   background-color: rgba(167, 100, 250, 0.2588235294);
-  transform: scale(1.11);
   cursor: pointer;
 }
 
+.btn-order {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .filter__number {
   background-color: #9356DC;
   color: white;
@@ -134,7 +151,7 @@ i.filter-icon {
 
 .menu__title-heart {
   position: relative;
-  right: 70px;
+  right: 50px;
   bottom: 30px;
 }
 
@@ -369,6 +386,11 @@ header {
   padding: 30px 20px 0 30px;
   width: 100%;
   flex-direction: row;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .restaurant-name {
@@ -653,11 +675,11 @@ header {
   height: 250px;
   box-sizing: border-box;
   transition-property: transform;
-  transition-duration: 750ms;
+  transition-duration: 450ms;
 }
 .card:hover {
-  transition: transform 500ms ease-in-out;
-  transform: scale(1.05);
+  transition: transform 400ms ease-in-out;
+  transform: scale(1.07);
 }
 .card .card__link {
   display: block;
