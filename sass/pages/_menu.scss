@@ -60,6 +60,11 @@
     padding:30px 20px 0 30px;
     width:100%;
     flex-direction:row;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 
 }
 .restaurant-name{
@@ -96,7 +101,6 @@
 }
 
 .entrees, .main-dish, .desserts{
-
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
