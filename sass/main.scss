@@ -151,10 +151,10 @@ transition-duration:750ms;
     height:250px;
     box-sizing:border-box;
     transition-property: transform;
-    transition-duration:750ms;
+    transition-duration:450ms;
     &:hover{
-        transition: transform 500ms ease-in-out;
-        transform:scale(1.05)
+        transition: transform 400ms ease-in-out;
+        transform:scale(1.07)
     }
     
   
