@@ -412,6 +412,7 @@ header {
   margin-top: -20px;
   position: relative;
   bottom: 40px;
+  width: 90%;
 }
 
 .course {
@@ -477,7 +478,7 @@ header {
 .menu-item {
   background-color: white;
   display: flex;
-  width: 440px;
+  width: 95%;
   border-radius: 20px;
   box-shadow: 0 0 10px 5px rgb(215, 214, 214);
   transform: scale(1);
@@ -520,6 +521,16 @@ header {
   padding-left: 20px;
   margin: 0px;
 }
+@media only screen and (max-width: 401px) {
+  .menu__text {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 402px) {
+  .menu__text {
+    width: 300px;
+  }
+}
 
 .menu-item__title {
   font-size: 24px;
@@ -527,11 +538,16 @@ header {
   margin-bottom: -10px;
   margin-top: 15px;
   min-height: fit-content;
-  width: 350px;
+  width: 95%;
+}
+@media only screen and (max-width: 401px) {
+  .menu-item__title {
+    font-size: 22px;
+  }
 }
 
 .menu-item__more-info {
-  width: 300px;
+  width: 95%;
 }
 
 .price-container {
