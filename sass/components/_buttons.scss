@@ -11,6 +11,18 @@
     display:flex;
     margin:auto;
     box-shadow: 0 0 20px 1px rgb(215, 214, 214);
+    
+
+}
+.btn{
+    transform:scale(1);
+    transition-property: transform;
+    transition-duration:750ms;
+    &:hover {
+        background-color:vars.$color-primary-hover;
+        transform:scale(1.11);
+        cursor:pointer;
+}
 }
 
 .filter__number {
