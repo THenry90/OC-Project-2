@@ -92,9 +92,40 @@
     flex-direction: column;
     gap:30px;
     align-content:flex-start;
- 
 
 }
+
+.entrees, .main-dish, .desserts{
+
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  .entrees {
+    animation-delay: 0s;
+  }
+  
+  .main-dish {
+    animation-delay: 0.25s;
+  }
+  
+  .desserts {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
 
 .course-header{
@@ -123,6 +154,7 @@
     box-shadow: 0 0 10px 5px rgb(215, 214, 214);
     transform:scale(1);
     overflow:hidden;
+    transition-duration:500ms;
     &:hover  .menu-item__price{
         transform:translate(-60px, 0)
         }
@@ -132,6 +164,12 @@
     &:hover .menu-item__icon {
         transform: rotate(0deg);
     }
+    &:hover {
+        box-shadow: 0 0 8px 4px rgb(223, 222, 222);
+        transform:scale(1.05);
+        cursor:pointer;
+    }
+
 }
 
 
