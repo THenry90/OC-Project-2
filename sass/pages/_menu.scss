@@ -49,8 +49,6 @@
     gap:10px;
     padding-bottom:20px;
     margin-bottom:20px;
-
-
 }
 
 .menu__title-icon-container{
@@ -86,8 +84,7 @@
     margin-top:-20px;
     position:relative;
     bottom:40px;
-
-  
+    width:90%;
 }
 
 .course{
@@ -97,7 +94,6 @@
     flex-direction: column;
     gap:30px;
     align-content:flex-start;
-
 }
 
 .entrees, .main-dish, .desserts{
@@ -153,7 +149,7 @@
 .menu-item{
     background-color: white;
     display:flex;
-    width:440px;
+    width:95%;
     border-radius:20px;
     box-shadow: 0 0 10px 5px rgb(215, 214, 214);
     transform:scale(1);
@@ -173,9 +169,7 @@
         transform:scale(1.05);
         cursor:pointer;
     }
-
 }
-
 
 .tick-container {
     transition: transform 330ms ease-in-out;
@@ -185,10 +179,6 @@
     transition: transform 330ms ease-in-out;
 }
 
-
-.menu-item:hover {
-
-}
 
 
 .menu__price-and-tick{
@@ -204,7 +194,14 @@
     width:300px;
     padding-left:20px;
     margin:0px;
-  
+
+    @media only screen and (max-width: 401px) {
+        width:250px
+    }
+    @media only screen and (min-width: 402px) {
+        width:300px
+
+}
 }
 
 .menu-item__title{
@@ -213,10 +210,14 @@
     margin-bottom:-10px;
     margin-top:15px;
     min-height:fit-content;
-    width:350px;
+    width:95%;
+    @media only screen and (max-width: 401px) {
+        font-size:22px;
+
+}
 }
 .menu-item__more-info{
-    width:300px;
+    width:95%;
 }
 
 
