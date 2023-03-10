@@ -488,7 +488,7 @@ header {
 .menu-item {
   background-color: white;
   display: flex;
-  width: 100%;
+  width: 95%;
   border-radius: 20px;
   box-shadow: 0 0 10px 5px rgb(215, 214, 214);
   transform: scale(1);
@@ -552,7 +552,7 @@ header {
 
 @media only screen and (max-width: 401px) {
   .menu-item__title {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 401px) {
