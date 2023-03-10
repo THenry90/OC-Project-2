@@ -56,7 +56,7 @@
     align-items: center;
     justify-content: space-between;
     padding:30px 20px 20px 30px;
-    width:90%;
+    width:100%;
     flex-direction:row;
     animation-name: fadeIn;
     animation-duration: 2s;
@@ -65,16 +65,8 @@
     opacity: 0;
 
 }
-.restaurant-name{
-    font-family: 'Shrikhand', cursive;
-    font-weight: 100;
-    font-size:36px;
-}
-.heart__icon {
-    padding-right:40px;
-    font-size:40px;
 
-}
+
 
 .courses-container{
     display:flex;
@@ -216,12 +208,13 @@
     margin-top:15px;
     min-height:fit-content;
     width:100%;
+    
 
 }
 
 @media only screen and (max-width: 401px) {
     .menu-item__title{
-    font-size:20px;
+    font-size:16px;
     }
 }
 
@@ -232,9 +225,9 @@
 }
 }
 .menu-item__more-info{
-    width:100%;
+    width:90%;
     font-size:15px;
-    white-space:nowrap;
+ 
     text-overflow: ellipsis;
 }
 
