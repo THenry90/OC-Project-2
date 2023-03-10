@@ -46,7 +46,7 @@ h3 {
 }
 @media only screen and (max-width: 401px) {
   .restaurant-name {
-    font-size: 18px;
+    font-size: 28px;
   }
 }
 
@@ -642,6 +642,7 @@ header {
   position: relative;
   bottom: 40px;
   width: 100%;
+  padding: 10px;
 }
 
 .course {
@@ -685,6 +686,7 @@ header {
 }
 .course-header {
   position: relative;
+  left: 10px;
   top: 20px;
 }
 
@@ -700,14 +702,14 @@ header {
   color: black;
   border: 2px solid rgb(135, 223, 203);
   position: relative;
-  right: 160px;
+  right: 165px;
   bottom: 15px;
 }
 
 .menu-item {
   background-color: white;
   display: flex;
-  width: 95%;
+  width: 90%;
   border-radius: 20px;
   box-shadow: 0 0 10px 5px rgb(215, 214, 214);
   transform: scale(1);
@@ -780,7 +782,7 @@ header {
   }
 }
 .menu-item__more-info {
-  width: 90%;
+  width: 95%;
   font-size: 15px;
   text-overflow: ellipsis;
 }
