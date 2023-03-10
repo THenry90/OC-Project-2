@@ -30,4 +30,17 @@ h2 {
 
 h3 {
     width:auto;
+
+}
+
+h3.restaurant-name  {
+font-size: 36px;
+}
+
+
+h3.restaurant-name  {
+
+    @media only screen and (max-width: 401px) {
+    font-size:18px;
+}
 }
