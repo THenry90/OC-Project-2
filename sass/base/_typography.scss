@@ -33,14 +33,19 @@ h3 {
 
 }
 
-h3.restaurant-name  {
-font-size: 36px;
-}
 
 
-h3.restaurant-name  {
+.restaurant-name  {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+    font-size:32px;
 
     @media only screen and (max-width: 401px) {
     font-size:18px;
 }
+}
+
+.restaurant-name{
+
+
 }
