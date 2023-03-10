@@ -77,6 +77,7 @@
     position:relative;
     bottom:40px;
     width:100%;
+    padding:10px;
 }
 
 .course{
@@ -123,6 +124,7 @@
 
 .course-header{
     position:relative;
+    left:10px;
     top:20px;
 }
 .course-title {
@@ -136,13 +138,13 @@
     color:black;
     border:2px solid rgb(135 223 203 );
     position:relative;
-    right:160px;
+    right:165px;
     bottom:15px;
 }
 .menu-item{
     background-color: white;
     display:flex;
-    width:95%;
+    width:90%;
     border-radius:20px;
     box-shadow: 0 0 10px 5px rgb(215, 214, 214);
     transform:scale(1);
@@ -225,7 +227,7 @@
 }
 }
 .menu-item__more-info{
-    width:90%;
+    width:95%;
     font-size:15px;
  
     text-overflow: ellipsis;
