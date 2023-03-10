@@ -94,7 +94,7 @@
     flex-direction: column;
     gap:20px;
     align-content:flex-start;
-   border:2px solid red;
+
 }
 
 .entrees, .main-dish, .desserts{
@@ -195,7 +195,7 @@
 
     padding-left:20px;
     margin:0px;
-    border:solid blue 2px;
+
     width: 300px;
 
 
@@ -216,7 +216,7 @@
     margin-top:15px;
     min-height:fit-content;
     width:100%;
-    border:green solid 2px;
+
 }
 
 @media only screen and (max-width: 401px) {
