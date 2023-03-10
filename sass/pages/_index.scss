@@ -1,0 +1,255 @@
+@use'../utils/mixins'as mx;
+@use'../utils/variables' as vars;
+
+@mixin border-style-1{
+    border:solid 2px red
+}
+/*---------------------------------------------*/
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .loading-container.show {
+    opacity: 1;
+  }
+
+  .loading-container {
+    animation: loading-screen 1s ease-out forwards, loading-screen-hide 0.5s ease-in-out 1.5s forwards;
+  }
+  
+  @keyframes loading-screen-hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+
+.section-1{
+    display:flex;
+    padding-top:30px;
+    padding-right:30px;
+    padding-left:30px;
+    flex-direction:column;
+    justify-content: center;
+    text-align:center;
+    background-color:white;
+    width:100%;
+    position:relative;
+    top:-25px;
+    padding-bottom:50px;
+ 
+}
+
+
+.loading-elements{
+    display:flex;
+    margin:auto;
+
+}
+
+.fa-spinner{
+    margin:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    transition: transform 2000ms ease-out;
+    transform: rotate(720deg);  
+    color: vars.$color-primary;
+    
+}
+
+.logo-load{
+    position:relative;
+    left:8px;
+    top:3px;
+    transition-property: transform;
+    transition: transform 1500ms ease-out;
+    transition-duration:750ms;
+    transform:scale(1.4)
+    
+}
+
+
+
+
+.explanation{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    padding-bottom:50px;
+    }
+
+.filter-container{
+    padding-top:10px;
+    display:flex;
+    flex-flow:wrap;
+}
+.filter{
+transform:scale(1);
+transition-property: transform;
+transition-duration:750ms;
+&:hover {
+    background-color:vars.$color-primary-hover;
+    transform:scale(1.11)
+}
+}
+
+
+
+.restaurant-section {
+    background-color: vars.$color-background4;
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.rest-card-container{
+    display:flex;
+    flex-flow:wrap;
+    height:auto;
+    gap:30px;
+    width:100%;
+    height:auto;
+    justify-content: center;
+    padding-bottom:200px;
+    }
+.card {
+    width:400px;
+    height:250px;
+    box-sizing:border-box;
+    transition-property: transform;
+    transition-duration:450ms;
+    &:hover{
+        transition: transform 400ms ease-in-out;
+        transform:scale(1.07)
+    }
+    
+  
+    .card__link{
+        display:block;
+        width:100%;
+        border:solid black 2px;
+        color:black;
+    }
+
+
+
+}
+
+.card:active{
+    color:green;
+}
+
+.card:visited {
+    color:black;
+}
+
+.card:link{
+    color:black;
+}
+
+.new-container{
+    padding-left:300px;
+}
+
+.new-tag{
+    background-color:rgb(136 223 203);
+    color: rgb(0 125 93);
+    width: 80px;
+    height:30px;
+    text-align: center;
+    align-self: center;
+    position:absolute;
+    z-index:1;
+    border-radius:5px;
+    padding-top:5px;
+    display:block;
+
+    
+}
+
+.card__image {
+    display:flex;
+    width:100%;
+    height:175px;
+    margin:auto;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.card__details{
+    background-color: white;;
+    width:100%;
+    height:75px;
+    padding:0px;
+    margin:0px;
+    display:flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-direction: row;
+}
+
+.card__text-container {
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    height:fit-content;
+
+ 
+    padding:0px;
+    margin:0px;
+    margin-left:20px;
+    padding-top:10px;
+
+}
+
+.card__restaurant-title {
+    padding-top:5px;
+    padding-left:5px;
+
+    margin:0px;
+}
+
+.card__restaurant-city {
+    padding:5px;
+    margin:0px;
+}
+
+
+.icon-container{
+
+    display:flex;
+    margin:auto;
+    padding-left:10px;
+ 
+    padding-right:20px;
+}
+.heart__icon {
+   
+    justify-items: flex-end;
+    font-size: 24px;
+}
+
+
+
