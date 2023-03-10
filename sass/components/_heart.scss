@@ -30,9 +30,21 @@
 }
 
 .menu__title-heart{
-  
     position:relative;
-    right:50px;
+    right:60px;
     bottom:30px;
 
+}
+
+.heart__icon {
+    padding-right:40px;
+    font-size:25px;
+}
+
+.heart__icon--menu {
+
+ 
+   
+    justify-items: flex-end;
+    font-size: 30px;
 }
