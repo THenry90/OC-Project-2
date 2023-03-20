@@ -22,7 +22,7 @@
   }
 
   .loading-container {
-    animation: loading-screen 1s ease-out forwards, loading-screen-hide 0.5s ease-in-out 1.5s forwards;
+    animation: loading-screen 1s ease-out forwards, loading-screen-hide 0.5s ease-in-out 1.5s forwards ;
   }
   
   @keyframes loading-screen-hide {
