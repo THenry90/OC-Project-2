@@ -1,7 +1,8 @@
 .tick-container {
+    display:flex;
     background-color:rgb(135 223 203);
     padding-left:20px;
-    margin-left:20px;
+    margin-left:20px;  /*potential issue */
     height:100%;
     width:70px;
     border-top-right-radius: 20px;
@@ -20,7 +21,7 @@
     background-color:white;
     border-radius:25px;
     padding:4px;
-    margin-top:32px;
+   
     transform: rotate(360deg);
     transition: transform 400ms ease-in-out;  
 }
