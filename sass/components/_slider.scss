@@ -1,7 +1,7 @@
 .tick-container {
     display:flex;
     background-color:rgb(135 223 203);
-    padding-left:20px;
+   
     margin-left:20px;  /*potential issue */
     height:100%;
     width:70px;
@@ -23,7 +23,9 @@
     padding:4px;
    
     transform: rotate(360deg);
-    transition: transform 400ms ease-in-out;  
+    transition: transform 400ms ease-in-out; 
+    position:relative;
+    left:20px; 
 }
 .menu-item__icon--lg{
     position:relative;

@@ -17,6 +17,7 @@
 
 .back-button-container{
     height:100px;
+
 }
 
 .back-button{
@@ -24,8 +25,9 @@
     top:30px;
     z-index:2;
     left:20px;
-    height:100%;
+
     color:black;
+    display:inline;
     
 }
 .restaurant-cover__image{
@@ -77,12 +79,13 @@
     position:relative;
     bottom:40px;
     width:100%;
-    padding:10px;
+    
+  
 }
 
 .course{
     display:flex;
-    margin:0 auto 0 auto;
+    margin:0 0 0 auto;
     margin-bottom:-40px;
     flex-direction: column;
     gap:20px;
@@ -125,7 +128,8 @@
 .course-header{
     position:relative;
     top:20px;
-    left:10px;
+    width:90%;
+   
 }
 .course-title {
     justify-content:flex-start;
@@ -138,13 +142,19 @@
     color:black;
     border:2px solid rgb(135 223 203 );
     position:relative;
-    right:190px;
+    right:150px;
     bottom:15px;
+    @media only screen and (max-width: 400px) {
+            left:-160px;
+        }
 }
 .menu-item{
     background-color: white;
     display:flex;
     width:95%;
+    @media only screen and (max-width: 400px) {
+        width:100%;
+    }
     border-radius:20px;
     box-shadow: 0 0 10px 5px rgb(215, 214, 214);
     transform:scale(1);
