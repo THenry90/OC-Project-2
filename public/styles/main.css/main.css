@@ -618,6 +618,7 @@ header {
   gap: 10px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  margin: auto;
 }
 
 .menu__title-icon-container {
@@ -647,7 +648,7 @@ header {
 
 .course {
   display: flex;
-  margin: 0 0 0 auto;
+  margin: 20 20 20 40;
   margin-bottom: -40px;
   flex-direction: column;
   gap: 20px;
